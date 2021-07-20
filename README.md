@@ -6,7 +6,8 @@
 
 * Run `poetry install` to install dependencies
 
-* Test the model by running `python exampleUsage.py ./images/face.jpeg ./models/OuluCASIA/`
+* Test the model with a single image by running: `python exampleUsage.py ./images/face.jpeg ./models/OuluCASIA/`
+    * You can also test the model with a real-time video feed by running: `python realtimeVideo.py ./models/CK/`
 
 ## CUDA setup instructions
 
