@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "micronets"
+name = "model1"
 version = "0.1.0"
 description = ""
 authors = ["Daniel Marchena Parreira <danielmapar@gmail.com>"]
@@ -9,6 +9,8 @@ python = "3.7"
 opencv-python = "4.5.2.54"
 tensorflow = "1.15.5"
 tensorflow-gpu = "1.15.5"
+grpcio = "1.39.0"
+grcppkg = {path = "../grcpPkg"}
 
 [tool.poetry.dev-dependencies]
 pytest = "5.2"

@@ -1,4 +1,4 @@
-from micronets import __version__
+from model1 import __version__
 
 
 def test_version():

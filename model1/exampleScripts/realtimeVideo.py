@@ -9,7 +9,7 @@ python_version  :2.7.11
 '''
 from __future__ import print_function
 from time import gmtime, strftime 
-from MicroExpNet import *
+from ..MicroExpNet import *
 import tensorflow as tf
 import numpy as np
 import cv2
@@ -98,6 +98,7 @@ if __name__ == '__main__':
             testX = testX.astype(np.float32)
 
             predictions = sess.run([classifier.pred], feed_dict={x: testX})
+            print(predictions)
             argmax = np.argmax(predictions)
             print("[" + get_time() + "] Emotion: " + labels[argmax])
 

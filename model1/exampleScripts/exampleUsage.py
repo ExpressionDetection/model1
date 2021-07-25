@@ -9,7 +9,7 @@ python_version  :2.7.11
 '''
 from __future__ import print_function
 from time import gmtime, strftime 
-from MicroExpNet import *
+from ..MicroExpNet import *
 import tensorflow as tf
 import numpy as np
 import cv2
