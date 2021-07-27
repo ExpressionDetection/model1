@@ -1,13 +1,17 @@
 # Model1 - Micro Expression Nets
 
-## Setup instructions
+## Docker setup instructions
+
+* Follow the steps inside the [compose](https://github.com/ExpressionDetection/compose) repository
+
+## Manual setup instructions
 
 * Install [poetry](https://python-poetry.org/docs/)
 
 * Run `poetry install` to install dependencies
 
-* Test the model with a single image by running: `cd exampleScripts && python exampleUsage.py ./images/face.jpeg ../models/OuluCASIA/`
-    * You can also test the model with a real-time video feed by running: `cd exampleScripts && python realtimeVideo.py ../models/CK/`
+* Test the model with a single image by running: `cd exampleScripts && python3 exampleUsage.py ./images/face.jpg ../models/OuluCASIA/`
+    * You can also test the model with a real-time video feed by running: `cd exampleScripts && python3 realtimeVideo.py ../models/CK/`
 
 * You can serve this model by running: `python server.py`
     * This is will generate a gRPC service, more details at the `grcpPkg` folder
@@ -18,11 +22,9 @@
 
 ## How to generate or update gRCP protobuffs
 
-* Install `grpcio-tools` globally by running `python -m pip install grpcio-tools`
+* Check the documentation at [grcpPkg](https://github.com/ExpressionDetection/grcpPkg)
 
-* Generate gRPC code by running: `python -m grpc_tools.protoc  -I.\grcpPkg\protos --python_out=.\grcpPkg --grpc_python_out=.\grcpPkg .\grcpPkg\protos\server.proto`
-
-# More details about this model
+## More details about this model
 
 * Original [Github repository](https://github.com/cuguilke/microexpnet)
 
