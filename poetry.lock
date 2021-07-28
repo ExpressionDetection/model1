@@ -94,6 +94,18 @@ six = ">=1.5.2"
 protobuf = ["grpcio-tools (>=1.39.0)"]
 
 [[package]]
+name = "grpcio-reflection"
+version = "1.39.0"
+description = "Standard Protobuf Reflection Service for gRPC"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+grpcio = ">=1.39.0"
+protobuf = ">=3.6.0"
+
+[[package]]
 name = "h5py"
 version = "2.10.0"
 description = "Read and write HDF5 files from Python"
@@ -427,7 +439,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "ab0dcb80e7e5c821cab89249f832765239c3a90deffc61d95a60a44911ea3319"
+content-hash = "7bb076e4cf094e07cc864f794c9956a1c99e3d77a8551d82fcbe64e3f81f9aa9"
 
 [metadata.files]
 absl-py = [
@@ -511,6 +523,11 @@ grpcio = [
     {file = "grpcio-1.39.0-cp39-cp39-win32.whl", hash = "sha256:c44958a24559f875d902d5c1acb0ae43faa5a84f6120d1d0d800acb52f96516e"},
     {file = "grpcio-1.39.0-cp39-cp39-win_amd64.whl", hash = "sha256:2068a2b896ac67103c4a5453d5435fafcbb1a2f41eaf25148d08780096935cee"},
     {file = "grpcio-1.39.0.tar.gz", hash = "sha256:57974361a459d6fe04c9ae0af1845974606612249f467bbd2062d963cb90f407"},
+]
+grpcio-reflection = [
+    {file = "grpcio-reflection-1.39.0.tar.gz", hash = "sha256:7cef0c0f2c44062f67965bab2ed38a74ad0956334117b0f658206ee8fca7d9d0"},
+    {file = "grpcio_reflection-1.39.0-py2-none-any.whl", hash = "sha256:c96ebe243171c25149e20d05138415169656a98275951a3fa6a26518a4470953"},
+    {file = "grpcio_reflection-1.39.0-py3-none-any.whl", hash = "sha256:5937441450e34703e1dedacb2c55888ce5fa1d42a2b00fcb1ef8702f09016b93"},
 ]
 h5py = [
     {file = "h5py-2.10.0-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:ecf4d0b56ee394a0984de15bceeb97cbe1fe485f1ac205121293fc44dcf3f31f"},
