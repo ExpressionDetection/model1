@@ -10,7 +10,7 @@ opencv-python = "4.5.2.54"
 tensorflow = "1.15.5"
 tensorflow-gpu = "1.15.5"
 grpcio = "1.39.0"
-grcppkg = {path = "../grcpPkg"}
+grcppkg = {path = "../grcp-pkg"}
 grpcio-reflection = "1.39.0"
 
 [tool.poetry.dev-dependencies]

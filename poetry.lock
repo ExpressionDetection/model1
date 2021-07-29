@@ -77,7 +77,7 @@ develop = false
 
 [package.source]
 type = "directory"
-url = "../grcpPkg"
+url = "../grcp-pkg"
 
 [[package]]
 name = "grpcio"

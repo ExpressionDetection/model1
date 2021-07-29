@@ -2,6 +2,7 @@
 
 source ~/.bashrc
 
+# Install dependencies during container boot
 poetry install --no-interaction --no-ansi
 
 if [ $RELOAD_APP_ON_FILE_CHANGE == "true" ]
@@ -9,8 +10,8 @@ if [ $RELOAD_APP_ON_FILE_CHANGE == "true" ]
 
     sigint_handler()
     {
-    kill $PID
-    exit
+      kill $PID
+      exit
     }
 
     trap sigint_handler SIGINT
