@@ -12,7 +12,7 @@ RPC_PORT = os.getenv("RPC_PORT", "50051")
 
 class ModelServicer(server_pb2_grpc.ModelServicer):
     def Inference(self, request, context):
-        return server_pb2.InferenceReply(prediction='Prediction, %s!' % request.image)   
+        return server_pb2.InferenceReply(prediction='{"labels": ["sad","happy","angry"], "probabilities": [1,2,3]}')   
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
@@ -30,6 +30,6 @@ def serve():
 
 if __name__ == '__main__':
     logging.basicConfig()
-    logging.info('Running1 server at port ' + RPC_PORT + '!')
-    print('Running1 server at port ' + RPC_PORT + '!')
+    logging.info('Running server at port ' + RPC_PORT + '!')
+    print('Running server at port ' + RPC_PORT + '!')
     serve()
