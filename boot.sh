@@ -2,9 +2,6 @@
 
 source ~/.bashrc
 
-# Install dependencies during container boot
-poetry install --no-interaction --no-ansi
-
 if [ $RELOAD_APP_ON_FILE_CHANGE == "true" ]
   then
 

@@ -10,7 +10,7 @@ opencv-python = "4.5.2.54"
 tensorflow = "1.15.5"
 tensorflow-gpu = "1.15.5"
 grpcio = "1.39.0"
-grcppkg = {path = "../grcp-pkg"}
+grcppkg = { git = "git@github.com:ExpressionDetection/grcp-pkg.git", branch = "master" }
 grpcio-reflection = "1.39.0"
 Pillow = "8.3.1"
 

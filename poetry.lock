@@ -76,8 +76,10 @@ python-versions = "*"
 develop = false
 
 [package.source]
-type = "directory"
-url = "../grcp-pkg"
+type = "git"
+url = "git@github.com:ExpressionDetection/grcp-pkg.git"
+reference = "master"
+resolved_reference = "498e8871029d4fd190476152d4116682710f0418"
 
 [[package]]
 name = "grpcio"
@@ -119,7 +121,7 @@ six = "*"
 
 [[package]]
 name = "importlib-metadata"
-version = "4.6.1"
+version = "4.6.3"
 description = "Read metadata from Python packages"
 category = "main"
 optional = false
@@ -447,7 +449,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "57a3f424fc91d927b5320a596b67ca7a1da27f09d4753d564808ba80ec698710"
+content-hash = "ec06ddd5e4ee512ef1bc03f64fc04e2eaab8a8dd0531aef0d9aec1ec4aa799e7"
 
 [metadata.files]
 absl-py = [
@@ -569,8 +571,8 @@ h5py = [
     {file = "h5py-2.10.0.tar.gz", hash = "sha256:84412798925dc870ffd7107f045d7659e60f5d46d1c70c700375248bf6bf512d"},
 ]
 importlib-metadata = [
-    {file = "importlib_metadata-4.6.1-py3-none-any.whl", hash = "sha256:9f55f560e116f8643ecf2922d9cd3e1c7e8d52e683178fecd9d08f6aa357e11e"},
-    {file = "importlib_metadata-4.6.1.tar.gz", hash = "sha256:079ada16b7fc30dfbb5d13399a5113110dab1aa7c2bc62f66af75f0b717c8cac"},
+    {file = "importlib_metadata-4.6.3-py3-none-any.whl", hash = "sha256:51c6635429c77cf1ae634c997ff9e53ca3438b495f10a55ba28594dd69764a8b"},
+    {file = "importlib_metadata-4.6.3.tar.gz", hash = "sha256:0645585859e9a6689c523927a5032f2ba5919f1f7d0e84bd4533312320de1ff9"},
 ]
 keras-applications = [
     {file = "Keras_Applications-1.0.8-py3-none-any.whl", hash = "sha256:df4323692b8c1174af821bf906f1e442e63fa7589bf0f1230a0b6bdc5a810c95"},
