@@ -17,7 +17,7 @@ if [ $RELOAD_APP_ON_FILE_CHANGE == "true" ]
     while true; do
         python3 /app/model1/server.py &
         PID=$!
-        inotifywait -e close_write -r `pwd`
+        inotifywait -e close_write -r /app/model1/server.py
         kill $PID
     done
   else
